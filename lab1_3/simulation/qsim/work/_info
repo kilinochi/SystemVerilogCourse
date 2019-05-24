@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Intel_trn/Verilog_SV/labs411/lab1_3/simulation/qsim
+vlab1_3
+Z1 !s110 1550834724
+!i10b 1
+!s100 Nkm^USUiYi]4nU0VmA_[D0
+IkJ=e=90Uc0Aa;XU9PS7Tl1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1550834723
+8lab1_3.vo
+Flab1_3.vo
+L0 32
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1550834724.000000
+!s107 lab1_3.vo|
+!s90 -work|work|lab1_3.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vlab1_3_vlg_vec_tst
+R1
+!i10b 1
+!s100 QA90]51mHgQE>8`O1ca9z3
+IOGjK>l[E;M11_SmOZ`gR=0
+R2
+R0
+w1550834715
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R5
+R6

@@ -1,0 +1,15 @@
+module elab_3(
+	input clk, rst,
+	output [3:0] dig [1:0]
+);
+
+output reg cout;
+
+assign cout = (cnt_div == 3);
+
+always @(posedge clk) // cnt_div
+	if (cnt_div == 25'd3)
+		cnt_div <= 0;
+	else
+		cnt_div <= cnt_div + 25'd1;
+		

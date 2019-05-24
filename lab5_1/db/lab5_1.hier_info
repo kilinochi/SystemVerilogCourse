@@ -1,0 +1,15 @@
+|lab5_1
+sel[0] => Equal0.IN0
+sel[0] => Equal1.IN2
+sel[1] => Equal0.IN2
+sel[1] => Equal1.IN0
+sel[2] => Equal0.IN1
+sel[2] => Equal1.IN1
+x => q1.DATAB
+y => q2.DATAB
+z => ~NO_FANOUT~
+q1 << q1$latch.DB_MAX_OUTPUT_PORT_TYPE
+q2 << q2$latch.DB_MAX_OUTPUT_PORT_TYPE
+q3 << <GND>
+
+

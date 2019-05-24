@@ -1,0 +1,47 @@
+const m = 3;
+
+module lab3_3(
+	input	[1:0]	btn, //aset, sclr
+	input	[1:0]	sw, //load, dir
+	input [7:4]	din,
+	input 		clk,
+	output[3:0]	led,
+	output supply0 [9:4] led0
+);
+
+
+wire 				cout;
+reg	[24:0]	cnt1; //cnt_div
+reg	[3:0]		cnt2; //q
+
+assign cout = (cnt1 == m);
+
+always @(posedge clk) // cnt_div
+begin
+	if(reset)
+		cnt1 <= 0;
+	else
+		if (cnt1 == m)
+			cnt1 <= 0;
+		else
+			cnt1 <= cnt1 + 24'd1;
+end 
+
+always @(posedge clk) // q
+begin
+	if(aset == 1)
+		cnt2 <= 4'b1000;
+	else
+		if (ena)
+			if (sclr == 0)
+				cnt2 <= 4'b0000;
+			else
+				if (load)
+					cnt2 <= din;
+				else
+					if (dir)
+						cnt2 <= cnt2 + 4'd1;
+					else
+						cnt2 <= cnt2 - 4'd1
+					
+end 

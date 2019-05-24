@@ -1,0 +1,177 @@
+$comment
+	File created using the following command:
+		vcd file elab_1.msim.vcd -direction
+$end
+$date
+	Fri Mar 01 10:59:59 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module elab_1_vlg_vec_tst $end
+$var reg 1 ! co $end
+$var reg 2 " sw [1:0] $end
+$var wire 1 # led [1] $end
+$var wire 1 $ led [0] $end
+
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + led[0]~output_o $end
+$var wire 1 , led[1]~output_o $end
+$var wire 1 - sw[0]~input_o $end
+$var wire 1 . co~input_o $end
+$var wire 1 / sw[1]~input_o $end
+$var wire 1 0 led~0_combout $end
+$var wire 1 1 led~1_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b0 "
+0$
+0#
+0%
+1&
+x'
+1(
+1)
+1*
+0+
+0,
+0-
+0.
+0/
+00
+01
+$end
+#40000
+1!
+1.
+11
+1,
+1#
+#80000
+b1 "
+0!
+1-
+0.
+#120000
+1!
+1.
+01
+10
+1+
+0,
+0#
+1$
+#160000
+b11 "
+b10 "
+0!
+0-
+1/
+0.
+11
+00
+0+
+1,
+1#
+0$
+#200000
+1!
+1.
+01
+10
+1+
+0,
+0#
+1$
+#240000
+b11 "
+0!
+1-
+0.
+#280000
+1!
+1.
+11
+1,
+1#
+#320000
+b1 "
+b0 "
+0!
+0-
+0/
+0.
+01
+00
+0+
+0,
+0#
+0$
+#360000
+1!
+1.
+11
+1,
+1#
+#400000
+b1 "
+0!
+1-
+0.
+#440000
+1!
+1.
+01
+10
+1+
+0,
+0#
+1$
+#480000
+b11 "
+b10 "
+0!
+0-
+1/
+0.
+11
+00
+0+
+1,
+1#
+0$
+#520000
+1!
+1.
+01
+10
+1+
+0,
+0#
+1$
+#560000
+b11 "
+0!
+1-
+0.
+#600000
+1!
+1.
+11
+1,
+1#
+#640000

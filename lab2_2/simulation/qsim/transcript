@@ -1,0 +1,44 @@
+# do lab2_2.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:09:37 on Mar 01,2019
+# vlog -work work lab2_2.vo 
+# -- Compiling module lab2_2
+# 
+# Top level modules:
+# 	lab2_2
+# End time: 15:09:37 on Mar 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:09:37 on Mar 01,2019
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module lab2_2_vlg_vec_tst
+# 
+# Top level modules:
+# 	lab2_2_vlg_vec_tst
+# End time: 15:09:37 on Mar 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.lab2_2_vlg_vec_tst 
+# Start time: 15:09:37 on Mar 01,2019
+# Loading work.lab2_2_vlg_vec_tst
+# Loading work.lab2_2
+# ** Warning: (vsim-3015) lab2_2.vo(429): [PCDPC] - Port size (1) does not match connection size (26) for port 'az'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /lab2_2_vlg_vec_tst/i1/\Mult0~8  File: nofile
+# ** Warning: (vsim-3015) lab2_2.vo(429): [PCDPC] - Port size (16) does not match connection size (18) for port 'bx'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /lab2_2_vlg_vec_tst/i1/\Mult0~8  File: nofile
+# ** Warning: (vsim-3015) lab2_2.vo(429): [PCDPC] - Port size (16) does not match connection size (19) for port 'by'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /lab2_2_vlg_vec_tst/i1/\Mult0~8  File: nofile
+# ** Warning: (vsim-3015) lab2_2.vo(429): [PCDPC] - Port size (1) does not match connection size (18) for port 'bz'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /lab2_2_vlg_vec_tst/i1/\Mult0~8  File: nofile
+# ** Warning: (vsim-3015) lab2_2.vo(429): [PCDPC] - Port size (4) does not match connection size (27) for port 'scanin'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /lab2_2_vlg_vec_tst/i1/\Mult0~8  File: nofile
+# ** Warning: (vsim-3015) lab2_2.vo(429): [PCDPC] - Port size (64) does not match connection size (1) for port 'chainin'. The port definition is at: nofile(38).
+#    Time: 0 ps  Iteration: 0  Instance: /lab2_2_vlg_vec_tst/i1/\Mult0~8  File: nofile
+# ** Warning: (vsim-3015) <protected>(<protected>): [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+#    Time: 0 ps  Iteration: 0  Protected: /lab2_2_vlg_vec_tst/i1/\Mult0~8 /<protected>/<protected> File: nofile
+# ** Warning: (vsim-3015) <protected>(<protected>): [PCDPC] - Port size (<protected>) does not match connection size (<protected>) for <protected>.<protected>
+#    Time: 0 ps  Iteration: 0  Protected: /lab2_2_vlg_vec_tst/i1/\Mult0~8 /<protected>/<protected> File: nofile
+# after#23
+# ** Note: $finish    : Waveform.vwf.vt(49)
+#    Time: 1 us  Iteration: 0  Instance: /lab2_2_vlg_vec_tst
+# End time: 15:09:37 on Mar 01,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8

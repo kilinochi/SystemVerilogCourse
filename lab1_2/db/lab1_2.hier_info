@@ -1,0 +1,25 @@
+|lab1_2
+sw[0][0] => led.DATAA
+sw[0][1] => led.DATAA
+sw[0][2] => led.DATAA
+sw[0][3] => led.DATAA
+sw[1][0] => led.DATAB
+sw[1][1] => led.DATAB
+sw[1][2] => led.DATAB
+sw[1][3] => led.DATAB
+key => led.OUTPUTSELECT
+key => led.OUTPUTSELECT
+key => led.OUTPUTSELECT
+key => led.OUTPUTSELECT
+led[0] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led0[4] <= <GND>
+led0[5] <= <GND>
+led0[6] <= <GND>
+led0[7] <= <GND>
+led0[8] <= <GND>
+led0[9] <= <GND>
+
+

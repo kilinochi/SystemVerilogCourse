@@ -1,0 +1,20 @@
+module elab_6(
+	input [3:0] sw[1:0],
+	input pba,
+	output led[3:0];
+);
+
+wire [3:0] out;
+wire [3:0] ina;
+wire [3:0] inb;
+
+assign led = out;
+assign sw[0] = ina;
+assign sw[1] = inb;
+
+mux2_1 u1 (ina[0], inb[0], pba, out[0]);
+mux2_1 u2 (ina[1], inb[1], pba, out[1]);
+mux2_1 u3 (ina[2], inb[2], pba, out[2]);
+mux2_1 u4 (ina[3], inb[3], pba, out[3]);
+
+endmodule 

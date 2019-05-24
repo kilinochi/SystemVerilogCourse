@@ -1,0 +1,24 @@
+module lab7_1(
+	input[1:0] number[3:0],
+	output[1:0] led[1:0]
+);
+
+task min(
+	input [1:0] num [1:0],
+	output[1:0] res
+);
+
+	res <= (num[1] < num[2]) ? num[1] : num[2];
+
+endtask
+
+task max(
+	input [1:0] num [1:0],
+	output[1:0] res
+);
+
+	res <= (num[1] > num[2]) ? num[1] : num[2];
+
+endtask
+
+endmodule 

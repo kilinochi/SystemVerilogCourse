@@ -1,0 +1,13 @@
+module lab3_1(
+	input [3:0] sw [1:0],
+	input sel,
+	output [3:0] led,
+	output supply0 [9:4] led0
+);
+
+if	(sel) 
+	assign led = (sw[1] > sw[0]) ? sw[1] : sw[0];
+else 
+	assign led = (sw[1] < sw[0]) ? sw[1] : sw[0];
+
+endmodule 

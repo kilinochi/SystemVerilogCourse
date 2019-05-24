@@ -1,0 +1,17 @@
+module lab5_2(
+	input [1:0] a, b, c, d
+	input sel,
+	output [7:0] led, 
+	output supply0 [9:8] led0
+);
+
+reg [8:0] x, y;
+
+always @ * begin
+	x <= a*c*d+b*c*d
+	y <= a*c*d+c*c*d
+end
+
+assign led = (sel) ? x : y;
+
+endmodule 

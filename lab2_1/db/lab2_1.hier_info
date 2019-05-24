@@ -1,0 +1,24 @@
+|lab2_1
+sw[0] => ShiftRight0.IN10
+sw[1] => ShiftRight0.IN9
+sw[2] => ShiftRight0.IN8
+sw[3] => ShiftRight0.IN7
+sw[4] => ShiftRight0.IN6
+sw[5] => ShiftRight0.IN5
+sw[6] => ShiftRight0.IN4
+sw[7] => ShiftRight0.IN2
+sw[7] => ShiftRight0.IN3
+key[0] => ShiftRight0.IN1
+key[1] => ShiftRight0.IN0
+led[0] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+led[7] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
+led0[8] <= <GND>
+led0[9] <= <GND>
+
+

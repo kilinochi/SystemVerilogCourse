@@ -1,0 +1,10 @@
+module lab2_2(
+	input signed [3:0] a,
+	input signed [3:0] b,
+	input sel,
+	output signed [7:0] c
+);
+
+assign c = (sel) ? a*b : a+b;
+
+endmodule 

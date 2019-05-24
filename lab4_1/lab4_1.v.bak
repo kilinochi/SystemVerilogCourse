@@ -1,0 +1,40 @@
+module lab4_1 (
+(* altera_attribute = "-name IO_STANDARD \"3.3-V LVCMOS\"", chip_pin = "D25"*)
+input clk,
+(* altera_attribute = "-name IO_STANDARD \"3.3-V LVCMOS\"", chip_pin = "AC9, AE11, AD12, AD11, AF10, AF9, AC12, AB12"*)
+input [7:0]sw,
+(* altera_attribute = "-name IO_STANDARD \"3.3-V LVCMOS\"", chip_pin = "W20, Y19, W19, W17, V18, V17, W16, V16"*)
+output reg [7:0]led,
+(* altera_attribute = "-name IO_STANDARD \"3.3-V LVCMOS\"", chip_pin = "AA14, AA15"*)
+input pba, pbb
+);
+reg cout;
+localparam modcnt = 25000000;
+reg[3:0] q;
+
+always @(posedge clk)
+begin
+cout<=0;
+if (div_cnt==modcnt) div_cnt<= 4'h0;
+else div_cnt<= div_cnt+4'h1;
+if (div_cnt==modcnt-1) cout <=1;
+end
+
+assign ena = cout;
+assign load = sw[1];
+assign aset = pba;
+assign sclr = pbb;
+assign dir = sw[0];
+assign din = sw[7:4];
+
+always @(posedge clk, negedge aset)
+if (aset == 1'b0) q<= 4'b1000;
+else if (ena)
+        casex ({sclr,load,dir}):
+		  0xx: q<=4'b0;
+		  11x: q<=din;
+		  101: q<=q+1'b1;
+		  100: q<=q-1'b1;
+		  end
+assign led[7:4]=q;
+		  

@@ -1,0 +1,17 @@
+|lab1_1
+a0 => eq.IN0
+a1 => eq.IN0
+b0 => eq.IN1
+b1 => eq.IN1
+eq <= eq.DB_MAX_OUTPUT_PORT_TYPE
+led0[1] <= <GND>
+led0[2] <= <GND>
+led0[3] <= <GND>
+led0[4] <= <GND>
+led0[5] <= <GND>
+led0[6] <= <GND>
+led0[7] <= <GND>
+led0[8] <= <GND>
+led0[9] <= <GND>
+
+

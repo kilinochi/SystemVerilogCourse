@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Intel_trn/Verilog_SV/labs411/elab_1/elab_1.sv
+source_file = 1, C:/Intel_trn/Verilog_SV/labs411/elab_1/db/elab_1.cbx.xml
+design_name = elab_1
+instance = comp, \led[0]~output , led[0]~output, elab_1, 1
+instance = comp, \led[1]~output , led[1]~output, elab_1, 1
+instance = comp, \sw[0]~input , sw[0]~input, elab_1, 1
+instance = comp, \co~input , co~input, elab_1, 1
+instance = comp, \sw[1]~input , sw[1]~input, elab_1, 1
+instance = comp, \led~0 , led~0, elab_1, 1
+instance = comp, \led~1 , led~1, elab_1, 1

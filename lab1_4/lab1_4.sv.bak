@@ -1,0 +1,4 @@
+module lab1_4 (
+	input[1:0] sw,
+	output[3:0] led);
+	

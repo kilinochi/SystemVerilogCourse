@@ -1,0 +1,3 @@
+module lab2_4 (
+	input [3:0] a, b, c, d,
+	

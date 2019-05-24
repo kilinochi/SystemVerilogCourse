@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/123/YandexDisk/9 Egorov/vesna/lab2_3/simulation/qsim
+vlab2_3
+Z1 !s110 1553113157
+!i10b 1
+!s100 m<MDa7WzRE@dA6<W<4bT:0
+IkYe_VSeA2PzU`cfLcRBS;1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1553113145
+8lab2_3.vo
+Flab2_3.vo
+L0 32
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1553113156.000000
+!s107 lab2_3.vo|
+!s90 -work|work|lab2_3.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vlab2_3_vlg_vec_tst
+R1
+!i10b 1
+!s100 UO9^in]_og^3OX5jl8n7z3
+I@UBFo;R[lWG3BYT;Ih0ig2
+R2
+R0
+w1553113143
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+!s108 1553113157.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+R5
