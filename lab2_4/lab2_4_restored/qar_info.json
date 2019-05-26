@@ -1,7 +1,0 @@
-{
-	"common_dir" : "C:/intelFPGA_lite/labs/lab2_4/",
-	"acds_version" : "Version 18.1.0",
-	"platform" : "windows",
-	"os" : "Windows 7",
-	"qpf" : "lab2_4.qpf"
-}

@@ -1,0 +1,6 @@
+
+State Machine - |lab4_1|state
+Name state.Tap2 state.Idle state.Tap1 
+state.Idle 0 0 0 
+state.Tap1 0 1 1 
+state.Tap2 1 1 0 
