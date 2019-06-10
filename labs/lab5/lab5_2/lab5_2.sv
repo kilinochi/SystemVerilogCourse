@@ -6,7 +6,7 @@ module lab5_2(
 	output supply0 [9:8] led0
 );
 
-reg [7:0] x, y;
+reg [7:0] x, y; // два конвейера
 reg [1:0] a_, b_, c_, d_;
 reg [3:0] cd;
 reg [1:0] abc;

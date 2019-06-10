@@ -16,10 +16,6 @@ begin
 	if(sel == 3'h2)
 			q2 = y;
 	if(sel == 3'h3)
-			q3 = z;
-	else 
-			q1 = 1'b0;
-			q2 = 1'b0;
-			q3 = 1'b0;
+			q3 = z;	
 end
 endmodule 

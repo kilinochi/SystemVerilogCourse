@@ -17,31 +17,33 @@ initial begin
 end
 
 always @(posedge clk) begin
-	if (~(a_before == a) | ~(b_before == b))
+	if (~(a_before == a) | ~(b_before == b)) // если входы изменились, то умножаем
 	begin
-		load = 1;
-		a_before <= a;
+		load = 1; // надо умножать!
+		a_before <= a; // запроминаем новые входы
 		b_before <= b;
 	end
 	else
-		load = 0;
+		load = 0; // не надо умножать!
 
 end
 						
 always @(posedge clk) begin
-	if (load) 
+	if (load) // если load! 
 	begin
-		temp_a <= a;
-		temp_b <= b;
-		a_mult_b <= {N{1'd0}};
+		temp_a <= a_before; // запоминание входов
+		temp_b <= b_before; 
+		a_mult_b <= {N{1'd0}}; // зануление!
 	end
 	else
-		repeat(N) begin
+		repeat(N) begin // повторим N - раз! 
 			if(temp_b[0]) a_mult_b <= a_mult_b + temp_a;
 			temp_a <= temp_a << 1;
 			temp_b <= temp_b >> 1;
 		end
 end
+
+
 
 assign led = a_mult_b;
 

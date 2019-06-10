@@ -1,6 +1,6 @@
 Analysis & Synthesis report for lab7_2
-Fri May 17 11:03:58 2019
-Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
+Thu May 30 21:33:09 2019
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
 ---------------------
@@ -26,7 +26,7 @@ Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2016  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -43,27 +43,27 @@ agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                      ;
-+---------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri May 17 11:03:58 2019           ;
-; Quartus Prime Version           ; 16.1.2 Build 203 01/18/2017 SJ Standard Edition ;
-; Revision Name                   ; lab7_2                                          ;
-; Top-level Entity Name           ; lab7_2                                          ;
-; Family                          ; Cyclone V                                       ;
-; Logic utilization (in ALMs)     ; N/A                                             ;
-; Total registers                 ; 29                                              ;
-; Total pins                      ; 17                                              ;
-; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 0                                               ;
-; Total DSP Blocks                ; 0                                               ;
-; Total HSSI RX PCSs              ; 0                                               ;
-; Total HSSI PMA RX Deserializers ; 0                                               ;
-; Total HSSI TX PCSs              ; 0                                               ;
-; Total HSSI PMA TX Serializers   ; 0                                               ;
-; Total PLLs                      ; 0                                               ;
-; Total DLLs                      ; 0                                               ;
-+---------------------------------+-------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu May 30 21:33:09 2019       ;
+; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Revision Name                   ; lab7_2                                      ;
+; Top-level Entity Name           ; lab7_2                                      ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 29                                          ;
+; Total pins                      ; 17                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -158,25 +158,25 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                     ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                 ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------+---------+
-; lab7_2.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Intel_trn/Verilog_sv/411/lab7_2/lab7_2.sv ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                        ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; lab7_2.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab7/lab7_2/lab7_2.sv ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -289,13 +289,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
-    Info: Processing started: Fri May 17 11:03:39 2019
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Processing started: Thu May 30 21:32:52 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab7_2 -c lab7_2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lab7_2.sv
-    Info (12023): Found entity 1: lab7_2 File: C:/Intel_trn/Verilog_sv/411/lab7_2/lab7_2.sv Line: 1
+    Info (12023): Found entity 1: lab7_2 File: C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab7/lab7_2/lab7_2.sv Line: 1
 Info (12127): Elaborating entity "lab7_2" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -304,17 +304,17 @@ Info (21057): Implemented 51 device resources after synthesis - the final resour
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 34 logic cells
-Info (144001): Generated suppressed messages file C:/Intel_trn/Verilog_sv/411/lab7_2/output_files/lab7_2.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab7/lab7_2/output_files/lab7_2.map.smsg
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 666 megabytes
-    Info: Processing ended: Fri May 17 11:03:58 2019
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Peak virtual memory: 4844 megabytes
+    Info: Processing ended: Thu May 30 21:33:09 2019
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:41
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Intel_trn/Verilog_sv/411/lab7_2/output_files/lab7_2.map.smsg.
+The suppressed messages can be found in C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab7/lab7_2/output_files/lab7_2.map.smsg.
 
 
