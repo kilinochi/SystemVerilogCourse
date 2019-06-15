@@ -52,4 +52,18 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_location_assignment PIN_AC12 -to a[1]
+set_location_assignment PIN_AB12 -to a[0]
+set_location_assignment PIN_AF9 -to b[1]
+set_location_assignment PIN_AF10 -to b[0]
+set_location_assignment PIN_AD12 -to c[1]
+set_location_assignment PIN_AD11 -to c[0]
+set_location_assignment PIN_AF14 -to clk
+set_location_assignment PIN_AC9 -to d[1]
+set_location_assignment PIN_AE11 -to d[0]
+set_location_assignment PIN_AA14 -to rst
+set_location_assignment PIN_V18 -to ledmax[1]
+set_location_assignment PIN_V17 -to ledmax[0]
+set_location_assignment PIN_W16 -to ledmin[1]
+set_location_assignment PIN_V16 -to ledmin[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

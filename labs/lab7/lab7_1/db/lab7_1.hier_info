@@ -55,9 +55,9 @@ d[1] => LessThan1.IN3
 d[1] => res.DATAA
 d[1] => LessThan4.IN3
 d[1] => res.DATAA
-led[0][0] <= mino[0].DB_MAX_OUTPUT_PORT_TYPE
-led[0][1] <= mino[1].DB_MAX_OUTPUT_PORT_TYPE
-led[1][0] <= maxo[0].DB_MAX_OUTPUT_PORT_TYPE
-led[1][1] <= maxo[1].DB_MAX_OUTPUT_PORT_TYPE
+ledmin[0] << mino[0].DB_MAX_OUTPUT_PORT_TYPE
+ledmin[1] << mino[1].DB_MAX_OUTPUT_PORT_TYPE
+ledmax[0] << maxo[0].DB_MAX_OUTPUT_PORT_TYPE
+ledmax[1] << maxo[1].DB_MAX_OUTPUT_PORT_TYPE
 
 

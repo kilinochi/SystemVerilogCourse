@@ -4,19 +4,19 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "led[0][0]",
+					"name" : "ledmin[0]",
 					"strict" : false
 				},
 				{
-					"name" : "led[0][1]",
+					"name" : "ledmin[1]",
 					"strict" : false
 				},
 				{
-					"name" : "led[1][0]",
+					"name" : "ledmax[0]",
 					"strict" : false
 				},
 				{
-					"name" : "led[1][1]",
+					"name" : "ledmax[1]",
 					"strict" : false
 				},
 				{

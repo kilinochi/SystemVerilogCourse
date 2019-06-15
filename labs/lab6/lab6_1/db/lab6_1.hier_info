@@ -10,14 +10,14 @@ db[0] => db[0].IN1
 db[1] => db[1].IN1
 db[2] => db[2].IN1
 db[3] => db[3].IN1
-res[0] <= rgstr:out_rg.port4
-res[1] <= rgstr:out_rg.port4
-res[2] <= rgstr:out_rg.port4
-res[3] <= rgstr:out_rg.port4
-res[4] <= rgstr:out_rg.port4
-res[5] <= rgstr:out_rg.port4
-res[6] <= rgstr:out_rg.port4
-res[7] <= rgstr:out_rg.port4
+res[0] << rgstr:out_rg.port4
+res[1] << rgstr:out_rg.port4
+res[2] << rgstr:out_rg.port4
+res[3] << rgstr:out_rg.port4
+res[4] << rgstr:out_rg.port4
+res[5] << rgstr:out_rg.port4
+res[6] << rgstr:out_rg.port4
+res[7] << rgstr:out_rg.port4
 
 
 |lab6_1|rgstr:in_rg_1

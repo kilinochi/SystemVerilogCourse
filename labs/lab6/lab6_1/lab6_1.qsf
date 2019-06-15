@@ -54,4 +54,45 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_location_assignment PIN_AA14 -to arst
+set_location_assignment PIN_AF14 -to clk
+set_location_assignment PIN_AF10 -to da[3]
+set_location_assignment PIN_AF9 -to da[2]
+set_location_assignment PIN_AC12 -to da[1]
+set_location_assignment PIN_AB12 -to da[0]
+set_location_assignment PIN_AC9 -to db[3]
+set_location_assignment PIN_AE11 -to db[2]
+set_location_assignment PIN_AD12 -to db[1]
+set_location_assignment PIN_AD11 -to db[0]
+set_location_assignment PIN_AE12 -to ena
+set_location_assignment PIN_W20 -to res[7]
+set_location_assignment PIN_Y19 -to res[6]
+set_location_assignment PIN_W19 -to res[5]
+set_location_assignment PIN_W17 -to res[4]
+set_location_assignment PIN_V18 -to res[3]
+set_location_assignment PIN_V17 -to res[2]
+set_location_assignment PIN_W16 -to res[1]
+set_location_assignment PIN_V16 -to res[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to arst
+set_instance_assignment -name IO_STANDARD "3.0-V LVCMOS" -to clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to da[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to da[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to da[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to da[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to da
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to res[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to res[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to res[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to res[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to db[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to db[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to db[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to db[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to db
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ena
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to res[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to res[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to res[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to res[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to res
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

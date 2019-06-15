@@ -1,12 +1,12 @@
 module lab7_1(
 	input rst, clk,
 	input reg[1:0] a, b, c, d,
-	output reg[1:0] led[1:0]
+	output reg[1:0] ledmin, ledmax
 );
 
 reg[1:0] min1, min2, max1, max2, mino, maxo;
-assign led[0] = mino;
-assign led[1] = maxo;
+assign ledmin = mino;
+assign ledmax = maxo;
 
 task min;
 	input [1:0] num1, num2;
