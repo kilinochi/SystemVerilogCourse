@@ -1,0 +1,17 @@
+Quartus Prime Archive log --	C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab2/lab2_2/lab2_2.qarlog
+
+Archive:	C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab2/lab2_2/lab2_2.qar
+Date:		Sun Jun 16 21:03:34 2019
+Quartus Prime		16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab2/lab2_2/Waveform.vwf
+C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab2/lab2_2/lab2_2.qpf
+C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab2/lab2_2/lab2_2.qsf
+C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab2/lab2_2/lab2_2.sv
+C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab2/lab2_2/output_files/Chain1.cdf
+f:/intel/pfga/quartus/bin64/assignment_defaults.qdf
+	======= Total: 6 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

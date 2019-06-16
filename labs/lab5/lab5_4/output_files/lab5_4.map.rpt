@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab5_4
-Sun Jun 09 22:47:41 2019
+Sun Jun 16 19:50:11 2019
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Jun 09 22:47:41 2019       ;
+; Analysis & Synthesis Status     ; Successful - Sun Jun 16 19:50:11 2019       ;
 ; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                   ; lab5_4                                      ;
 ; Top-level Entity Name           ; lab5_4                                      ;
@@ -178,31 +178,31 @@ agreement for further details.
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-; Estimate of Logic utilization (ALMs needed) ; 16         ;
-;                                             ;            ;
-; Combinational ALUT usage for logic          ; 32         ;
-;     -- 7 input functions                    ; 0          ;
-;     -- 6 input functions                    ; 0          ;
-;     -- 5 input functions                    ; 8          ;
-;     -- 4 input functions                    ; 8          ;
-;     -- <=3 input functions                  ; 16         ;
-;                                             ;            ;
-; Dedicated logic registers                   ; 8          ;
-;                                             ;            ;
-; I/O pins                                    ; 36         ;
-;                                             ;            ;
-; Total DSP Blocks                            ; 0          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; load~input ;
-; Maximum fan-out                             ; 24         ;
-; Total fan-out                               ; 180        ;
-; Average fan-out                             ; 1.61       ;
-+---------------------------------------------+------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 10          ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 11          ;
+;     -- 7 input functions                    ; 0           ;
+;     -- 6 input functions                    ; 8           ;
+;     -- 5 input functions                    ; 0           ;
+;     -- 4 input functions                    ; 0           ;
+;     -- <=3 input functions                  ; 3           ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 8           ;
+;                                             ;             ;
+; I/O pins                                    ; 36          ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; rg_int[0]~0 ;
+; Maximum fan-out                             ; 8           ;
+; Total fan-out                               ; 124         ;
+; Average fan-out                             ; 1.36        ;
++---------------------------------------------+-------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -210,7 +210,7 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |lab5_4                    ; 32 (32)             ; 8 (8)                     ; 0                 ; 0          ; 36   ; 0            ; |lab5_4             ; lab5_4      ; work         ;
+; |lab5_4                    ; 11 (11)             ; 8 (8)                     ; 0                 ; 0          ; 36   ; 0            ; |lab5_4             ; lab5_4      ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -221,9 +221,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 8     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Clear  ; 8     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -235,7 +235,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |lab5_4|temp[0]            ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |lab5_4|rg_int[0]          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -255,17 +255,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 8                           ;
-;     CLR               ; 8                           ;
-; arriav_lcell_comb     ; 32                          ;
-;     normal            ; 32                          ;
-;         2 data inputs ; 8                           ;
-;         3 data inputs ; 8                           ;
-;         4 data inputs ; 8                           ;
-;         5 data inputs ; 8                           ;
+;     SCLR              ; 8                           ;
+; arriav_lcell_comb     ; 11                          ;
+;     normal            ; 11                          ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 2                           ;
+;         6 data inputs ; 8                           ;
 ; boundary_port         ; 36                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.63                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.26                        ;
 +-----------------------+-----------------------------+
 
 
@@ -274,7 +273,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -284,33 +283,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sun Jun 09 22:47:19 2019
+    Info: Processing started: Sun Jun 16 19:49:52 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab5_4 -c lab5_4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lab5_4.sv
     Info (12023): Found entity 1: lab5_4 File: C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab5/lab5_4/lab5_4.sv Line: 1
 Info (12127): Elaborating entity "lab5_4" for the top level hierarchy
-Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "rg_int[0]" is converted into an equivalent circuit using register "rg_int[0]~_emulated" and latch "rg_int[0]~1" File: C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab5/lab5_4/lab5_4.sv Line: 27
-    Warning (13310): Register "rg_int[1]" is converted into an equivalent circuit using register "rg_int[1]~_emulated" and latch "rg_int[1]~5" File: C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab5/lab5_4/lab5_4.sv Line: 27
-    Warning (13310): Register "rg_int[2]" is converted into an equivalent circuit using register "rg_int[2]~_emulated" and latch "rg_int[2]~9" File: C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab5/lab5_4/lab5_4.sv Line: 27
-    Warning (13310): Register "rg_int[3]" is converted into an equivalent circuit using register "rg_int[3]~_emulated" and latch "rg_int[3]~13" File: C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab5/lab5_4/lab5_4.sv Line: 27
-    Warning (13310): Register "rg_int[4]" is converted into an equivalent circuit using register "rg_int[4]~_emulated" and latch "rg_int[4]~17" File: C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab5/lab5_4/lab5_4.sv Line: 27
-    Warning (13310): Register "rg_int[5]" is converted into an equivalent circuit using register "rg_int[5]~_emulated" and latch "rg_int[5]~21" File: C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab5/lab5_4/lab5_4.sv Line: 27
-    Warning (13310): Register "rg_int[6]" is converted into an equivalent circuit using register "rg_int[6]~_emulated" and latch "rg_int[6]~25" File: C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab5/lab5_4/lab5_4.sv Line: 27
-    Warning (13310): Register "rg_int[7]" is converted into an equivalent circuit using register "rg_int[7]~_emulated" and latch "rg_int[7]~29" File: C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab5/lab5_4/lab5_4.sv Line: 27
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 68 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 47 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 28 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 32 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4843 megabytes
-    Info: Processing ended: Sun Jun 09 22:47:41 2019
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:44
+    Info (21061): Implemented 11 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4845 megabytes
+    Info: Processing ended: Sun Jun 16 19:50:11 2019
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:50
 
 

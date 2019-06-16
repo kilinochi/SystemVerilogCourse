@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/123/YandexDisk/9 Egorov/vesna/lab_m3
+vcounter
+Z0 !s110 1558271293
+!i10b 1
+!s100 Z=2nV`Chhg3_MkZHCfm^@0
+I3^Kj1I8`eJTPXoo<i445l3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/123/YandexDisk/9 Egorov/vesna/lab_m4
+Z3 w1558262293
+8C:/Users/123/YandexDisk/9 Egorov/vesna/libraries/counter.v
+FC:/Users/123/YandexDisk/9 Egorov/vesna/libraries/counter.v
+L0 10
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1558271293.000000
+!s107 C:/Users/123/YandexDisk/9 Egorov/vesna/libraries/counter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/123/YandexDisk/9 Egorov/vesna/libraries/counter.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vtest_counter
+R0
+!i10b 1
+!s100 4>j3>?KiNN^B3GYj>G^D<0
+IXa31l`U<O5:CY3;WYMibD1
+R1
+R2
+R3
+8C:/Users/123/YandexDisk/9 Egorov/vesna/libraries/tcounter.v
+FC:/Users/123/YandexDisk/9 Egorov/vesna/libraries/tcounter.v
+L0 11
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/123/YandexDisk/9 Egorov/vesna/libraries/tcounter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/123/YandexDisk/9 Egorov/vesna/libraries/tcounter.v|
+!i113 1
+R6
+R7

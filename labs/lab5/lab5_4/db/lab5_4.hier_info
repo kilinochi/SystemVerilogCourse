@@ -37,21 +37,21 @@ clk => rg_int[4].CLK
 clk => rg_int[5].CLK
 clk => rg_int[6].CLK
 clk => rg_int[7].CLK
-load => rg_int[0].ALOAD
-load => rg_int[1].ALOAD
-load => rg_int[2].ALOAD
-load => rg_int[3].ALOAD
-load => rg_int[4].ALOAD
-load => rg_int[5].ALOAD
-load => rg_int[6].ALOAD
-load => rg_int[7].ALOAD
-q_out[0] << rg_int[0].DB_MAX_OUTPUT_PORT_TYPE
-q_out[1] << rg_int[1].DB_MAX_OUTPUT_PORT_TYPE
-q_out[2] << rg_int[2].DB_MAX_OUTPUT_PORT_TYPE
-q_out[3] << rg_int[3].DB_MAX_OUTPUT_PORT_TYPE
-q_out[4] << rg_int[4].DB_MAX_OUTPUT_PORT_TYPE
-q_out[5] << rg_int[5].DB_MAX_OUTPUT_PORT_TYPE
-q_out[6] << rg_int[6].DB_MAX_OUTPUT_PORT_TYPE
-q_out[7] << rg_int[7].DB_MAX_OUTPUT_PORT_TYPE
+load => rg_int.OUTPUTSELECT
+load => rg_int.OUTPUTSELECT
+load => rg_int.OUTPUTSELECT
+load => rg_int.OUTPUTSELECT
+load => rg_int.OUTPUTSELECT
+load => rg_int.OUTPUTSELECT
+load => rg_int.OUTPUTSELECT
+load => rg_int.OUTPUTSELECT
+q_out[0] <= rg_int[0].DB_MAX_OUTPUT_PORT_TYPE
+q_out[1] <= rg_int[1].DB_MAX_OUTPUT_PORT_TYPE
+q_out[2] <= rg_int[2].DB_MAX_OUTPUT_PORT_TYPE
+q_out[3] <= rg_int[3].DB_MAX_OUTPUT_PORT_TYPE
+q_out[4] <= rg_int[4].DB_MAX_OUTPUT_PORT_TYPE
+q_out[5] <= rg_int[5].DB_MAX_OUTPUT_PORT_TYPE
+q_out[6] <= rg_int[6].DB_MAX_OUTPUT_PORT_TYPE
+q_out[7] <= rg_int[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
