@@ -1,0 +1,38 @@
+`timescale 1 ns/ 100 ps
+module tb2f_b2bd;
+localparam N = 4;
+
+reg		[N - 1:0]	sw;
+wire	[2*N - 1:0] led;
+reg		[N - 1:0]	input_mem	[0:(1 << N) - 1];
+reg		[2*N - 1:0]	exp_mem		[0:(1 << N) - 1];
+integer				i;
+
+b2bd b2bd_inst(.sw(sw), .led(led));
+initial
+begin
+	$readmemb("input_b2bd.dat", input_mem);
+	$readmemb("exp_b2bd.dat",   exp_mem);
+end
+
+initial
+begin
+	for (i = 0; i < (1 << N); i = i + 1)
+	begin
+		sw = input_mem[i];
+		#5;
+		if (exp_mem[i] != led) err_task;
+	end
+	
+	$display("\n**SIMULATION PASSED SUCCESSFULLY**\n");
+	$stop;
+end
+
+task err_task;
+begin
+	$display("Time:%t ERROR: expected=%0d result=%0d \n", $realtime, exp_mem[i], led);
+	$stop;
+end
+endtask
+
+endmodule

@@ -1,6 +1,6 @@
 Fitter report for lab7_2
-Fri May 17 11:07:23 2019
-Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
+Mon Jun 17 16:14:53 2019
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
 ---------------------
@@ -43,7 +43,7 @@ Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2016  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -60,30 +60,30 @@ agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------------+
-; Fitter Summary                                                                    ;
-+---------------------------------+-------------------------------------------------+
-; Fitter Status                   ; Successful - Fri May 17 11:07:23 2019           ;
-; Quartus Prime Version           ; 16.1.2 Build 203 01/18/2017 SJ Standard Edition ;
-; Revision Name                   ; lab7_2                                          ;
-; Top-level Entity Name           ; lab7_2                                          ;
-; Family                          ; Cyclone V                                       ;
-; Device                          ; 5CSEMA5F31C6                                    ;
-; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 14 / 32,070 ( < 1 % )                           ;
-; Total registers                 ; 30                                              ;
-; Total pins                      ; 17 / 457 ( 4 % )                                ;
-; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                           ;
-; Total RAM Blocks                ; 0 / 397 ( 0 % )                                 ;
-; Total DSP Blocks                ; 0 / 87 ( 0 % )                                  ;
-; Total HSSI RX PCSs              ; 0                                               ;
-; Total HSSI PMA RX Deserializers ; 0                                               ;
-; Total HSSI TX PCSs              ; 0                                               ;
-; Total HSSI PMA TX Serializers   ; 0                                               ;
-; Total PLLs                      ; 0 / 6 ( 0 % )                                   ;
-; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
-+---------------------------------+-------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Fitter Summary                                                                ;
++---------------------------------+---------------------------------------------+
+; Fitter Status                   ; Successful - Mon Jun 17 16:14:53 2019       ;
+; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Revision Name                   ; lab7_2                                      ;
+; Top-level Entity Name           ; lab7_2                                      ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSEMA5F31C6                                ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 14 / 32,070 ( < 1 % )                       ;
+; Total registers                 ; 31                                          ;
+; Total pins                      ; 17 / 457 ( 4 % )                            ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
+; Total RAM Blocks                ; 0 / 397 ( 0 % )                             ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -150,15 +150,17 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.3%      ;
+;     Processor 2            ;   0.2%      ;
+;     Processor 3            ;   0.2%      ;
+;     Processor 4            ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -168,7 +170,8 @@ agreement for further details.
 ; Node             ; Action     ; Operation                                         ; Reason                     ; Node Port ; Node Port Name ; Destination Node    ; Destination Port ; Destination Port Name ;
 +------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+---------------------+------------------+-----------------------+
 ; clk~inputCLKENA0 ; Created    ; Placement                                         ; Fitter Periphery Placement ;           ;                ;                     ;                  ;                       ;
-; temp_a[6]        ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; temp_a[6]~DUPLICATE ;                  ;                       ;
+; temp_a[0]        ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; temp_a[0]~DUPLICATE ;                  ;                       ;
+; temp_a[5]        ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; temp_a[5]~DUPLICATE ;                  ;                       ;
 +------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+---------------------+------------------+-----------------------+
 
 
@@ -210,7 +213,7 @@ agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Intel_trn/Verilog_sv/411/lab7_2/output_files/lab7_2.pin.
+The pin-out file can be found in C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab7/lab7_2/output_files/lab7_2.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -220,12 +223,12 @@ The pin-out file can be found in C:/Intel_trn/Verilog_sv/411/lab7_2/output_files
 +-------------------------------------------------------------+--------------------+-------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 14 / 32,070        ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 14                 ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 18 / 32,070        ; < 1 % ;
-;         [a] ALMs used for LUT logic and registers           ; 11                 ;       ;
-;         [b] ALMs used for LUT logic                         ; 3                  ;       ;
-;         [c] ALMs used for registers                         ; 4                  ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 19 / 32,070        ; < 1 % ;
+;         [a] ALMs used for LUT logic and registers           ; 10                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 4                  ;       ;
+;         [c] ALMs used for registers                         ; 5                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 4 / 32,070         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 5 / 32,070         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32,070         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -244,15 +247,15 @@ The pin-out file can be found in C:/Intel_trn/Verilog_sv/411/lab7_2/output_files
 ;     -- 5 input functions                                    ; 1                  ;       ;
 ;     -- 4 input functions                                    ; 2                  ;       ;
 ;     -- <=3 input functions                                  ; 22                 ;       ;
-; Combinational ALUT usage for route-throughs                 ; 4                  ;       ;
+; Combinational ALUT usage for route-throughs                 ; 3                  ;       ;
 ;                                                             ;                    ;       ;
-; Dedicated logic registers                                   ; 30                 ;       ;
+; Dedicated logic registers                                   ; 31                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
 ;         -- Primary logic registers                          ; 29 / 64,140        ; < 1 % ;
-;         -- Secondary logic registers                        ; 1 / 64,140         ; < 1 % ;
+;         -- Secondary logic registers                        ; 2 / 64,140         ; < 1 % ;
 ;     -- By function:                                         ;                    ;       ;
 ;         -- Design implementation registers                  ; 29                 ;       ;
-;         -- Routing optimization registers                   ; 1                  ;       ;
+;         -- Routing optimization registers                   ; 2                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
 ; I/O pins                                                    ; 17 / 457           ; 4 %   ;
@@ -308,11 +311,11 @@ The pin-out file can be found in C:/Intel_trn/Verilog_sv/411/lab7_2/output_files
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.3% / 0.4% / 0.1% ;       ;
-; Maximum fan-out                                             ; 30                 ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.2% / 0.3% / 0.1% ;       ;
+; Maximum fan-out                                             ; 31                 ;       ;
 ; Highest non-global fan-out                                  ; 21                 ;       ;
-; Total fan-out                                               ; 188                ;       ;
-; Average fan-out                                             ; 1.98               ;       ;
+; Total fan-out                                               ; 189                ;       ;
+; Average fan-out                                             ; 1.99               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -323,12 +326,12 @@ The pin-out file can be found in C:/Intel_trn/Verilog_sv/411/lab7_2/output_files
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 14 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 14                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 18 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 11                   ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 3                    ; 0                              ;
-;         [c] ALMs used for registers                         ; 4                    ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 19 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 10                   ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 4                    ; 0                              ;
+;         [c] ALMs used for registers                         ; 5                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 4 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 5 / 32070 ( < 1 % )  ; 0 / 32070 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32070 ( 0 % )    ; 0 / 32070 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                    ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                    ; 0                              ;
@@ -347,7 +350,7 @@ The pin-out file can be found in C:/Intel_trn/Verilog_sv/411/lab7_2/output_files
 ;     -- 5 input functions                                    ; 1                    ; 0                              ;
 ;     -- 4 input functions                                    ; 2                    ; 0                              ;
 ;     -- <=3 input functions                                  ; 22                   ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 4                    ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 3                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
 ;     -- 64-address deep                                      ; 0                    ; 0                              ;
 ;     -- 32-address deep                                      ; 0                    ; 0                              ;
@@ -355,10 +358,10 @@ The pin-out file can be found in C:/Intel_trn/Verilog_sv/411/lab7_2/output_files
 ; Dedicated logic registers                                   ; 0                    ; 0                              ;
 ;     -- By type:                                             ;                      ;                                ;
 ;         -- Primary logic registers                          ; 29 / 64140 ( < 1 % ) ; 0 / 64140 ( 0 % )              ;
-;         -- Secondary logic registers                        ; 1 / 64140 ( < 1 % )  ; 0 / 64140 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 2 / 64140 ( < 1 % )  ; 0 / 64140 ( 0 % )              ;
 ;     -- By function:                                         ;                      ;                                ;
 ;         -- Design implementation registers                  ; 29                   ; 0                              ;
-;         -- Routing optimization registers                   ; 1                    ; 0                              ;
+;         -- Routing optimization registers                   ; 2                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ;                                                             ;                      ;                                ;
 ; Virtual pins                                                ; 0                    ; 0                              ;
@@ -375,8 +378,8 @@ The pin-out file can be found in C:/Intel_trn/Verilog_sv/411/lab7_2/output_files
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 188                  ; 0                              ;
-;     -- Registered Connections                               ; 64                   ; 0                              ;
+;     -- Total Connections                                    ; 189                  ; 0                              ;
+;     -- Registered Connections                               ; 72                   ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
 ;     -- Top                                                  ; 0                    ; 0                              ;
@@ -408,15 +411,15 @@ The pin-out file can be found in C:/Intel_trn/Verilog_sv/411/lab7_2/output_files
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; a[0] ; AB12  ; 3A       ; 12           ; 0            ; 17           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
-; a[1] ; AC12  ; 3A       ; 16           ; 0            ; 0            ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
-; a[2] ; AF9   ; 3A       ; 8            ; 0            ; 34           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
-; a[3] ; AF10  ; 3A       ; 4            ; 0            ; 51           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
-; b[0] ; AD11  ; 3A       ; 2            ; 0            ; 40           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
-; b[1] ; AD12  ; 3A       ; 16           ; 0            ; 17           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
-; b[2] ; AE11  ; 3A       ; 4            ; 0            ; 34           ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
-; b[3] ; AC9   ; 3A       ; 4            ; 0            ; 0            ; 3                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
-; clk  ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 30                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
+; a[0] ; AB12  ; 3A       ; 12           ; 0            ; 17           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
+; a[1] ; AC12  ; 3A       ; 16           ; 0            ; 0            ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
+; a[2] ; AF9   ; 3A       ; 8            ; 0            ; 34           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
+; a[3] ; AF10  ; 3A       ; 4            ; 0            ; 51           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
+; b[0] ; AD11  ; 3A       ; 2            ; 0            ; 40           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
+; b[1] ; AD12  ; 3A       ; 16           ; 0            ; 17           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
+; b[2] ; AE11  ; 3A       ; 4            ; 0            ; 34           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
+; b[3] ; AC9   ; 3A       ; 4            ; 0            ; 0            ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
+; clk  ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 31                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 3.3-V LVCMOS ; Off         ; --                        ; User                 ; no        ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -1384,7 +1387,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
-; |lab7_2                    ; 14.0 (14.0)          ; 17.5 (17.5)                      ; 3.5 (3.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 26 (26)             ; 30 (30)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 17   ; 0            ; |lab7_2             ; lab7_2      ; work         ;
+; |lab7_2                    ; 14.0 (14.0)          ; 18.0 (18.0)                      ; 4.0 (4.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 26 (26)             ; 31 (31)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 17   ; 0            ; |lab7_2             ; lab7_2      ; work         ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1421,37 +1424,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+-------------------+---------+
 ; clk                       ;                   ;         ;
 ; b[1]                      ;                   ;         ;
+;      - b_before[1]        ; 1                 ; 0       ;
 ;      - always0~3          ; 1                 ; 0       ;
-;      - temp_b~1           ; 1                 ; 0       ;
-;      - b_before[1]~feeder ; 1                 ; 0       ;
 ; a[0]                      ;                   ;         ;
+;      - a_before[0]        ; 0                 ; 0       ;
 ;      - always0~0          ; 0                 ; 0       ;
-;      - temp_a~0           ; 0                 ; 0       ;
-;      - a_before[0]~feeder ; 0                 ; 0       ;
 ; a[1]                      ;                   ;         ;
+;      - a_before[1]        ; 0                 ; 0       ;
 ;      - always0~0          ; 0                 ; 0       ;
-;      - temp_a~1           ; 0                 ; 0       ;
-;      - a_before[1]~feeder ; 0                 ; 0       ;
 ; a[2]                      ;                   ;         ;
-;      - a_before[2]        ; 1                 ; 0       ;
 ;      - always0~0          ; 1                 ; 0       ;
-;      - temp_a~2           ; 1                 ; 0       ;
+;      - a_before[2]~feeder ; 1                 ; 0       ;
 ; a[3]                      ;                   ;         ;
 ;      - always0~1          ; 0                 ; 0       ;
-;      - temp_a~3           ; 0                 ; 0       ;
 ;      - a_before[3]~feeder ; 0                 ; 0       ;
 ; b[0]                      ;                   ;         ;
 ;      - b_before[0]        ; 1                 ; 0       ;
 ;      - always0~1          ; 1                 ; 0       ;
-;      - temp_b~0           ; 1                 ; 0       ;
 ; b[2]                      ;                   ;         ;
 ;      - b_before[2]        ; 0                 ; 0       ;
 ;      - always0~2          ; 0                 ; 0       ;
-;      - temp_b~2           ; 0                 ; 0       ;
 ; b[3]                      ;                   ;         ;
-;      - b_before[3]        ; 0                 ; 0       ;
 ;      - always0~2          ; 0                 ; 0       ;
-;      - temp_b~3           ; 0                 ; 0       ;
+;      - b_before[3]~feeder ; 0                 ; 0       ;
 +---------------------------+-------------------+---------+
 
 
@@ -1460,10 +1455,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name          ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; a_mult_b[0]~0 ; LABCELL_X16_Y1_N48 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; always0~3     ; LABCELL_X17_Y1_N12 ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; clk           ; PIN_AF14           ; 30      ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; load          ; FF_X16_Y1_N35      ; 21      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; a_mult_b[0]~0 ; LABCELL_X42_Y1_N51 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; always0~3     ; LABCELL_X42_Y1_N15 ; 9       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; clk           ; PIN_AF14           ; 31      ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; load          ; FF_X42_Y1_N29      ; 21      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
 +---------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1472,7 +1467,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+----------------------+------------------+---------------------------+
-; clk  ; PIN_AF14 ; 30      ; Global Clock         ; GCLK6            ; --                        ;
+; clk  ; PIN_AF14 ; 31      ; Global Clock         ; GCLK6            ; --                        ;
 +------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1481,14 +1476,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+------------------------+
 ; Routing Resource Type                       ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Block interconnects                         ; 33 / 289,320 ( < 1 % ) ;
+; Block interconnects                         ; 34 / 289,320 ( < 1 % ) ;
 ; C12 interconnects                           ; 0 / 13,420 ( 0 % )     ;
-; C2 interconnects                            ; 8 / 119,108 ( < 1 % )  ;
-; C4 interconnects                            ; 9 / 56,300 ( < 1 % )   ;
+; C2 interconnects                            ; 14 / 119,108 ( < 1 % ) ;
+; C4 interconnects                            ; 4 / 56,300 ( < 1 % )   ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )         ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )         ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )         ;
-; Direct links                                ; 6 / 289,320 ( < 1 % )  ;
+; Direct links                                ; 8 / 289,320 ( < 1 % )  ;
 ; Global clocks                               ; 1 / 16 ( 6 % )         ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )          ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )          ;
@@ -1544,12 +1539,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )          ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )         ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )         ;
-; Local interconnects                         ; 23 / 84,580 ( < 1 % )  ;
+; Local interconnects                         ; 20 / 84,580 ( < 1 % )  ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )         ;
-; R14 interconnects                           ; 24 / 12,676 ( < 1 % )  ;
-; R14/C12 interconnect drivers                ; 24 / 20,720 ( < 1 % )  ;
-; R3 interconnects                            ; 11 / 130,992 ( < 1 % ) ;
-; R6 interconnects                            ; 38 / 266,960 ( < 1 % ) ;
+; R14 interconnects                           ; 9 / 12,676 ( < 1 % )   ;
+; R14/C12 interconnect drivers                ; 9 / 20,720 ( < 1 % )   ;
+; R3 interconnects                            ; 23 / 130,992 ( < 1 % ) ;
+; R6 interconnects                            ; 66 / 266,960 ( < 1 % ) ;
 ; Spine clocks                                ; 1 / 360 ( < 1 % )      ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )     ;
 +---------------------------------------------+------------------------+
@@ -1681,7 +1676,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; clk             ; clk                  ; 5.5               ;
+; clk             ; clk                  ; 5.9               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
@@ -1696,25 +1691,32 @@ This will disable optimization of problematic paths and expose them for further 
 ; temp_a[4]       ; a_mult_b[7]          ; 0.323             ;
 ; temp_a[2]       ; a_mult_b[7]          ; 0.322             ;
 ; temp_a[0]       ; a_mult_b[7]          ; 0.322             ;
-; temp_a[7]       ; a_mult_b[7]          ; 0.319             ;
-; temp_a[3]       ; a_mult_b[7]          ; 0.319             ;
-; temp_a[1]       ; a_mult_b[7]          ; 0.318             ;
+; temp_a[7]       ; a_mult_b[7]          ; 0.320             ;
+; temp_a[3]       ; a_mult_b[7]          ; 0.317             ;
+; temp_a[1]       ; a_mult_b[7]          ; 0.317             ;
 ; temp_a[5]       ; a_mult_b[7]          ; 0.296             ;
-; load            ; temp_a[6]            ; 0.229             ;
-; temp_b[2]       ; temp_b[1]            ; 0.164             ;
+; temp_b[3]       ; temp_b[2]            ; 0.243             ;
+; load            ; temp_b[2]            ; 0.227             ;
+; b_before[2]     ; temp_b[2]            ; 0.181             ;
+; temp_b[1]       ; temp_b[0]            ; 0.176             ;
+; b_before[0]     ; temp_b[0]            ; 0.174             ;
+; temp_b[2]       ; temp_b[1]            ; 0.161             ;
+; b_before[1]     ; temp_b[1]            ; 0.160             ;
+; b_before[3]     ; temp_b[3]            ; 0.160             ;
 +-----------------+----------------------+-------------------+
-Note: This table only shows the top 10 path(s) that have the largest delay added for hold.
+Note: This table only shows the top 16 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (119006): Selected device 5CSEMA5F31C6 for design "lab7_2"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Info (184020): Starting Fitter periphery placement operations
 Info (11191): Automatically promoted 1 clock (1 global)
@@ -1728,36 +1730,36 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQue
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:15
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:23
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:02
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:03
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X11_Y0 to location X21_Y10
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X33_Y0 to location X44_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.23 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
+Info (11888): Total time spent on timing analysis during the Fitter is 0.47 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:07
-Info (144001): Generated suppressed messages file C:/Intel_trn/Verilog_sv/411/lab7_2/output_files/lab7_2.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 2131 megabytes
-    Info: Processing ended: Fri May 17 11:07:23 2019
-    Info: Elapsed time: 00:00:57
-    Info: Total CPU time (on all processors): 00:00:56
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:05
+Info (144001): Generated suppressed messages file C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab7/lab7_2/output_files/lab7_2.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 6591 megabytes
+    Info: Processing ended: Mon Jun 17 16:14:54 2019
+    Info: Elapsed time: 00:01:01
+    Info: Total CPU time (on all processors): 00:01:47
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Intel_trn/Verilog_sv/411/lab7_2/output_files/lab7_2.fit.smsg.
+The suppressed messages can be found in C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab7/lab7_2/output_files/lab7_2.fit.smsg.
 
 

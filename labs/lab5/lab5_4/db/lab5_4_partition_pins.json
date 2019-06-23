@@ -36,15 +36,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk",
-					"strict" : false
-				},
-				{
-					"name" : "da[0]",
-					"strict" : false
-				},
-				{
-					"name" : "db[0]",
+					"name" : "load",
 					"strict" : false
 				},
 				{
@@ -52,19 +44,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "sel[1]",
-					"strict" : false
-				},
-				{
-					"name" : "load",
-					"strict" : false
-				},
-				{
 					"name" : "sel[0]",
 					"strict" : false
 				},
 				{
-					"name" : "da[1]",
+					"name" : "sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "db[0]",
+					"strict" : false
+				},
+				{
+					"name" : "da[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
 					"strict" : false
 				},
 				{
@@ -72,11 +68,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "dc[1]",
+					"name" : "da[1]",
 					"strict" : false
 				},
 				{
-					"name" : "da[2]",
+					"name" : "dc[1]",
 					"strict" : false
 				},
 				{
@@ -84,11 +80,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "dc[2]",
+					"name" : "da[2]",
 					"strict" : false
 				},
 				{
-					"name" : "da[3]",
+					"name" : "dc[2]",
 					"strict" : false
 				},
 				{
@@ -96,11 +92,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "dc[3]",
+					"name" : "da[3]",
 					"strict" : false
 				},
 				{
-					"name" : "da[4]",
+					"name" : "dc[3]",
 					"strict" : false
 				},
 				{
@@ -108,11 +104,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "dc[4]",
+					"name" : "da[4]",
 					"strict" : false
 				},
 				{
-					"name" : "da[5]",
+					"name" : "dc[4]",
 					"strict" : false
 				},
 				{
@@ -120,11 +116,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "dc[5]",
+					"name" : "da[5]",
 					"strict" : false
 				},
 				{
-					"name" : "da[6]",
+					"name" : "dc[5]",
 					"strict" : false
 				},
 				{
@@ -132,11 +128,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "da[6]",
+					"strict" : false
+				},
+				{
 					"name" : "dc[6]",
 					"strict" : false
 				},
 				{
-					"name" : "da[7]",
+					"name" : "dc[7]",
 					"strict" : false
 				},
 				{
@@ -144,7 +144,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "dc[7]",
+					"name" : "da[7]",
 					"strict" : false
 				}
 			]

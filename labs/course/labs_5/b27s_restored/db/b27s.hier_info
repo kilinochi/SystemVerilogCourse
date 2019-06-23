@@ -1,0 +1,24 @@
+|b27s
+sw[0] => sw[0]~0.DATAIN
+sw[1] => sw[1]~1.DATAIN
+sw[2] => sw[2]~2.DATAIN
+sw[3] => sw[3]~3.DATAIN
+ss_a[0] <= ss_a[0].DB_MAX_OUTPUT_PORT_TYPE
+ss_a[1] <= ss_a[1].DB_MAX_OUTPUT_PORT_TYPE
+ss_a[2] <= ss_a[2].DB_MAX_OUTPUT_PORT_TYPE
+ss_a[3] <= ss_a[3].DB_MAX_OUTPUT_PORT_TYPE
+ss_a[4] <= ss_a[4].DB_MAX_OUTPUT_PORT_TYPE
+ss_a[5] <= ss_a[5].DB_MAX_OUTPUT_PORT_TYPE
+ss_a[6] <= ss_a[6].DB_MAX_OUTPUT_PORT_TYPE
+led0[0] <= <GND>
+led0[1] <= <GND>
+led0[2] <= <GND>
+led0[3] <= <GND>
+led0[4] <= <GND>
+led0[5] <= <GND>
+led0[6] <= <GND>
+led0[7] <= <GND>
+led0[8] <= <GND>
+led0[9] <= <GND>
+
+

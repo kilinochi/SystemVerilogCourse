@@ -1,0 +1,22 @@
+{C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/course/labs_5/labs_5/b27s.sv} {1 {vlog -work work -sv -stats=none {C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/course/labs_5/labs_5/b27s.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module b27s
+
+Top level modules:
+	b27s
+
+} {} {}} {C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/course/labs_5/labs_5/tb2f_b27s.sv} {1 {vlog -work work -sv -stats=none {C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/course/labs_5/labs_5/tb2f_b27s.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb2f_b27s
+
+Top level modules:
+	tb2f_b27s
+
+} {} {}} {C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/course/labs_5/labs_5/tb1_b27s.sv} {1 {vlog -work work -sv -stats=none {C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/course/labs_5/labs_5/tb1_b27s.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb1_b27s
+
+Top level modules:
+	tb1_b27s
+
+} {} {}}

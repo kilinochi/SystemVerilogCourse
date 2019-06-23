@@ -1,6 +1,6 @@
 Assembler report for lab7_2
-Fri May 17 11:07:48 2019
-Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
+Mon Jun 17 16:15:07 2019
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
 ---------------------
@@ -10,7 +10,7 @@ Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Intel_trn/Verilog_sv/411/lab7_2/output_files/lab7_2.sof
+  5. Assembler Device Options: C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab7/lab7_2/output_files/lab7_2.sof
   6. Assembler Messages
 
 
@@ -18,7 +18,7 @@ Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2016  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri May 17 11:07:48 2019 ;
+; Assembler Status      ; Successful - Mon Jun 17 16:15:07 2019 ;
 ; Revision Name         ; lab7_2                                ;
 ; Top-level Entity Name ; lab7_2                                ;
 ; Family                ; Cyclone V                             ;
@@ -53,24 +53,24 @@ agreement for further details.
 +--------+---------+---------------+
 
 
-+------------------------------------------------------------+
-; Assembler Generated Files                                  ;
-+------------------------------------------------------------+
-; File Name                                                  ;
-+------------------------------------------------------------+
-; C:/Intel_trn/Verilog_sv/411/lab7_2/output_files/lab7_2.sof ;
-+------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                                                         ;
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                                         ;
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab7/lab7_2/output_files/lab7_2.sof ;
++---------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Intel_trn/Verilog_sv/411/lab7_2/output_files/lab7_2.sof ;
-+----------------+---------------------------------------------------------------------+
-; Option         ; Setting                                                             ;
-+----------------+---------------------------------------------------------------------+
-; Device         ; 5CSEMA5F31C6                                                        ;
-; JTAG usercode  ; 0x00AFC37B                                                          ;
-; Checksum       ; 0x00AFC37B                                                          ;
-+----------------+---------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/lab7/lab7_2/output_files/lab7_2.sof ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                                                    ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Device         ; 5CSEMA5F31C6                                                                                                                                               ;
+; JTAG usercode  ; 0x00AFCBCC                                                                                                                                                 ;
+; Checksum       ; 0x00AFCBCC                                                                                                                                                 ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,15 +78,15 @@ agreement for further details.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
-    Info: Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
-    Info: Processing started: Fri May 17 11:07:25 2019
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Processing started: Mon Jun 17 16:14:55 2019
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off lab7_2 -c lab7_2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 696 megabytes
-    Info: Processing ended: Fri May 17 11:07:48 2019
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 4844 megabytes
+    Info: Processing ended: Mon Jun 17 16:15:07 2019
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:12
 
 

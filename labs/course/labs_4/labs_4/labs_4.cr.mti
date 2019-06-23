@@ -1,0 +1,29 @@
+{C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/course/labs_4/labs_4/tb2f_b2bd.sv} {1 {vlog -work work -sv -stats=none {C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/course/labs_4/labs_4/tb2f_b2bd.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb2f_b2bd
+
+Top level modules:
+	tb2f_b2bd
+
+} {} {}} {C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/course/labs_4/labs_4/tb1_b2bd.sv} {1 {vlog -work work -sv -stats=none {C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/course/labs_4/labs_4/tb1_b2bd.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb1_b2bd
+
+Top level modules:
+	tb1_b2bd
+
+} {} {}} {C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/course/labs_4/labs_4/tb2_b2bd.sv} {1 {vlog -work work -sv -stats=none {C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/course/labs_4/labs_4/tb2_b2bd.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb2_b2bd
+
+Top level modules:
+	tb2_b2bd
+
+} {} {}} {C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/course/labs_4/labs_4/b2bd.sv} {1 {vlog -work work -sv -stats=none {C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/course/labs_4/labs_4/b2bd.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module b2bd
+
+Top level modules:
+	b2bd
+
+} {} {}}

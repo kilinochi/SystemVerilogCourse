@@ -1,0 +1,94 @@
+Restore Archived Project report for b2bd
+Mon Jun 17 03:35:39 2019
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Mon Jun 17 03:35:39 2019 ;
+; Revision Name                   ; b2bd                                  ;
+; Top-level Entity Name           ; b2bd                                  ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/course/labs_4/b2bd.qar' into the 'C:/Users/arman-sh/OneDrive - Peter the Great St. Petersburg Polytechnical University/SystemVerilogCourse/labs/course/labs_4/b2bd_restored/' directory
+Info: Generated report 'b2bd.restore.rpt'
+Info (23030): Evaluation of Tcl script f:/intel/pfga/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4839 megabytes
+    Info: Processing ended: Mon Jun 17 03:35:40 2019
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++-------------------------------+
+; Files Restored                ;
++-------------------------------+
+; File Name                     ;
++-------------------------------+
+; qar_info.json                 ;
+; b2bd.qpf                      ;
+; b2bd.qsf                      ;
+; b2bd.sv                       ;
+; b2bd.vwf                      ;
+; output_files/b2bd.asm.rpt     ;
+; output_files/b2bd.eda.rpt     ;
+; output_files/b2bd.fit.rpt     ;
+; output_files/b2bd.fit.smsg    ;
+; output_files/b2bd.fit.summary ;
+; output_files/b2bd.flow.rpt    ;
+; output_files/b2bd.jdi         ;
+; output_files/b2bd.map.rpt     ;
+; output_files/b2bd.map.summary ;
+; output_files/b2bd.pin         ;
+; output_files/b2bd.sld         ;
+; output_files/b2bd.sof         ;
+; output_files/b2bd.sta.rpt     ;
+; output_files/b2bd.sta.summary ;
+; assignment_defaults.qdf       ;
++-------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

@@ -1,0 +1,15 @@
+|b2bd
+sw[0] => sw[0]~0.DATAIN
+sw[1] => sw[1]~1.DATAIN
+sw[2] => sw[2]~2.DATAIN
+sw[3] => sw[3]~3.DATAIN
+led[0] <= led[0].DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= led[5].DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= led[6].DB_MAX_OUTPUT_PORT_TYPE
+led[7] <= led[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
